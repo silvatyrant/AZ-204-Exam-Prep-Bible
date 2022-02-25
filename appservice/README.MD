@@ -7,11 +7,17 @@
 -------------
 
 ## General
-**App Service Plan Types**
-| Consumption plan (serverless) | Premium plan | Dedicated plan|
-| --- | --- | --- |
-| | | |
- 
+
+###App Service Plan
+   * ASPs define:
+     *  **Region** - Where apps are hosted
+     *  **OS** - Linux or Windows
+     *  Number of **VM instances**
+     *  **Size** of VM instances
+     *  **Pricing tier** - Depends on OS and determines features
+        *  **Shared Compute**: Free & Shared - Two base tiers and runs apps on the same Azure VM other App Service apps, including ones from other customers. These tiers allocate CPU quotas to each app and apps cannot scale out.
+        *  **Dedicated Compute**: Basic, Premium, PremiumV2, PremiumV3 - Runs on dedicated Azure VMs. Only apps in the same App Service plan share resources. The higher the tier, the more resources available to scale out.
+        *  **Isolated**: Isolated or IsolatedV2 - Network and compute isolation. Maxmimum scale out capabilities.
 
 ## Tech Tips
 
@@ -75,6 +81,6 @@ Create Azure App Service Web Apps
 operational or system metrics
 ```
 **Relevant Tutorials**
-[
 
 ## Related Services
+[Azure Functions](../functions/README.MD)
