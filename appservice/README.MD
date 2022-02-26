@@ -27,8 +27,9 @@
 * Traffic Manager
 * [Best Practices](https://docs.microsoft.com/en-us/azure/architecture/checklist/resiliency-per-service#app-service)
 
-
-
+**Continuous Deployment**
+* [Kudu](https://github.com/projectkudu/kudu/wiki)
+* 
 **Deployment Slots**
   * [Custom warm-up options](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#Warm-up):
      1. <applicationInitialization\> tag in web.config [(more info)](https://ruslany.net/2017/11/most-common-deployment-slot-swap-failures-and-how-to-fix-them/)
