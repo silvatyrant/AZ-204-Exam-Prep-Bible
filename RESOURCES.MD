@@ -11,7 +11,8 @@ Resouces
 ### Documentation
  * [Microsoft Official Azure Documentation](https://docs.microsoft.com/en-us/azure/?product=popular)
  * [Skills Measured](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4oZ7B)
- * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/)
+ * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure)
+   * [Persisted Parameters](https://docs.microsoft.com/en-us/cli/azure/param-persist-howto) - Helpful when doing labs using the CLI (prevents the need to retype implied parameter values. eg. values for `--resource-group` or `--location`).
 
 ### Labs & Tutorials
  * Udemy
@@ -22,6 +23,7 @@ Resouces
  * [Microsoft Learn](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204)
  * [Microsoft Code Samples
 ](https://docs.microsoft.com/en-us/samples/browse/)
+ * [serverlesslibrary.net](http://serverlesslibrary.net) for Azure Functions code samples
 
 ### Tools
  * [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools/blob/master/README.md#linux)

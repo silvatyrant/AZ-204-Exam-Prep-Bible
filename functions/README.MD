@@ -95,19 +95,21 @@
 **Skills Measured in Examination**
 Source: Exam AZ-204: Developing Solutions for Microsoft Azure - Skills Measured (updated March 26 2021)
 
-```
-Implement Azure functions
-- create and deploy Azure Functions apps
-- implement input and output bindings for a function
-- implement function triggers by using data operations, timers, and webhooks
-- implement Azure Durable Functions
-- implement custom handlers
-```
+Tick once tutorial has been comleted with skill measured:
+- [x] create and deploy Azure Functions apps
+- [ ] implement input and output bindings for a function
+- [ ] implement function triggers by using data operations, timers, and webhooks
+- [ ] implement Azure Durable Functions
+- [ ] implement custom handlers
 
- * [Create durable function in Python](https://docs.microsoft.com/en-us/azure/azure-functions/durable/quickstart-python-vscode)
- * [Create a Go or Rust function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-other?tabs=go%2Clinux)
 
-See serverlesslibrary.net for Function tutorials and code samples.
+|Tutorial|Skill Measured|Section|Section Weight|
+|---|---|---|---|
+| [Create a Python function in Azure from the command line](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python?tabs=azure-cli%2Cbash%2Cbrowser)| Create and deploy Azure Functions apps | Implement Azure functions | 25-30%| 
+| [Create durable function in Python](https://docs.microsoft.com/en-us/azure/azure-functions/durable/quickstart-python-vscode)| Implement Azure Durable Functions | Implement Azure functions | 25-30% |
+|[Create a Go or Rust function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-other?tabs=go%2Clinux)| Implement custom handlers | Implement Azure functions | 25-30% |
+
+See [serverlesslibrary.net](http://serverlesslibrary.net) for more Function tutorials and code samples.
 
 ### Related Services
  [Azure App Service](../appservice/README.MD) | [Azure SQL Database](../sqldb/README.MD) | [Azure Blob Storage](../storage/README.MD) | [Azure Logic Apps](../logicapps/README.MD)

@@ -32,3 +32,5 @@ Implement IaaS solutions
 | [Deploy a container application to Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app) | Run containers by using Azure Container Instance | Implement IaaS solutions | 25-30% |
 
 ## Related Services
+
+[Azure VM](../azurevm/README.MD) 
