@@ -19,8 +19,13 @@
   * Less robust than [Service Bus queues](../servicebus/README.MD).
   * Queue size limited to storage account capacity.
 
+
 ### Tech Tips
-* Blob event triggers not instantaneous - Not to be used for time-sensitive applications.
+* Blob event triggers not instantaneous - Not to be used for extremely time-sensitive applications. [Queue triggers or Event Grid should be used instead](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-blob-trigger?tabs=python#polling).
+* You can check the [Change Feed](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-change-feed?tabs=azure-portal#what-is-the-difference-between-change-feed-and-storage-analytics-logging) for Blob metadata and to evaluate any changes to the Blob store over time.
+* [Queue trigger for Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue#hostjson-settings)
+  * Default Max Dequeue count is 5 (then moved to poision/dead-letter queue)
+  * Will allow for batch processing of 16 messages in parallel by Function
   
 ### High Availability / Scalability
 
@@ -60,4 +65,4 @@ Implement user authentication and authorization
 **Relevant Tutorials**
 
 ### Related Services
-[Azure VM](../azurevm/README.MD) | [Azure Service Bus](../servicebus/README.MD) | [Azure Functions](../functions/README.MD) | [Azure AD](../azuread/README.MD) | [Azure Key Vault](../keyvault/README.MD)
+[Azure VM](../azurevm/README.MD) | [Azure Service Bus](../servicebus/README.MD) | [Azure Functions](../functions/README.MD) | [Azure AD](../azuread/README.MD) | [Azure Key Vault](../keyvault/README.MD) | [Azure Event Grid](./../eventgrid/README.MD)

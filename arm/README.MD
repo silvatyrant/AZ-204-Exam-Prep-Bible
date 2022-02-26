@@ -6,6 +6,13 @@
 [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 ----------------------
 ### General
+**ARM Functions**
+
+**Validating**
+
+
+**Deploying**
+
 
 ### Tech Tips
 

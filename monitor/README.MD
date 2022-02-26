@@ -14,7 +14,7 @@
  * Azure Service Health for notification of service interruption in AZ
 
 
-**Azure Application Insights**
+**[Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)**
 
 ### Tech Tips
 
@@ -23,9 +23,13 @@
 ### Notable Limits**
 
 ### Labs
+**Skills Measured in Examination**
+Source: Exam AZ-204: Developing Solutions for Microsoft Azure - Skills Measured (updated March 26 2021)
 
-```
-- configure an app or service to use Application Insights
-- analyze and troubleshoot solutions by using Azure Monitor
-- implement Application Insights web tests and alerts
-```
+Section: Instrument solutions to support monitoring
+and logging
+- [ ] Configure an app or service to use Application Insights
+- [ ] Analyze and troubleshoot solutions by using Azure Monitor
+- [ ] Implement Application Insights web tests and alerts
+
+[Set up Azure Monitor for your Python application](https://docs.microsoft.com/en-us/azure/azure-monitor/app/opencensus-python)

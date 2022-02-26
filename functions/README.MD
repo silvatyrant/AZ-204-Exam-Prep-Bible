@@ -70,9 +70,9 @@
     **\*** Only Azure services relevant to AZ-204 Exam Skills Measured (see [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings) for full table).  
 
 3. Folder Structure and Files
-   * `host.json` - Hosted in the function root directory and contains runtime-specific config. 
+   * [`host.json`](https://docs.microsoft.com/en-us/azure/azure-functions/functions-host-json) - Hosted in the function root directory and contains runtime-specific config. 
    * `function.json`
-   * `local.settings.json` - Contains all the app settings for the Function App, but for testing locally. These configs be overridden when running in Azure.
+   * [`local.settings.json`](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local#local-settings-file) - Contains all the app settings for the Function App, but for testing locally. These configs are overridden when running in Azure.
    * `./bin` - Hosted in root and contains any libary packages that the function requires.
 
   
