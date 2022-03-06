@@ -18,6 +18,7 @@
 **Security**
   * Always Encrypted
   * Transparent Data Encryption
+  * [Dynamic Data Masking](https://docs.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview)
 
 ### Tech Tips
 

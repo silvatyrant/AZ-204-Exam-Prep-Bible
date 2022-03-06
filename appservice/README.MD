@@ -19,6 +19,18 @@
         *  **Dedicated Compute**: Basic, Premium, PremiumV2, PremiumV3 - Runs on dedicated Azure VMs. Only apps in the same App Service plan share resources. The higher the tier, the more resources available to scale out.
         *  **Isolated**: Isolated or IsolatedV2 - Network and compute isolation. Maxmimum scale out capabilities.
 
+###[WebJobs](https://docs.microsoft.com/en-us/azure/app-service/webjobs-create)
+ * Not yet supported on Linux
+ * Runs background tasks and offered for free as part of App Service.
+ * Two types: Continuous vs. Triggered
+
+| Continuous | Triggered |
+|---|---|
+| Starts immediately when the WebJob is created. To keep the job from ending, the program or script typically does its work inside an endless loop. If the job does end, you can restart it. Typically used with WebJobs SDK. | Starts only when triggered manually or on a schedule. |
+| Runs on all instances that the web app runs on. You can optionally restrict the WebJob to a single instance. | Runs on a single instance that Azure selects for load balancing. |
+| Supports remote debugging. | Doesn't support remote debugging. |
+| Code is deployed under `\site\wwwroot\app_data\Jobs\Continuous`. | Code is deployed under `\site\wwwroot\app_data\Jobs\Triggered`. |
+
 ## Tech Tips
 
 

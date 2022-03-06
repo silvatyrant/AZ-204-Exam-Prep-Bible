@@ -6,7 +6,9 @@
 Cosmos DB
 ---------
 ### General
+**Consistency Levels**
 
+<img src=".\assets\Consistency-Model-of-Azure.png.webp" width=90%>
 ### Tech Tips
 
 ### High Availability / Scalability
@@ -14,9 +16,10 @@ Cosmos DB
   * Replicate the DB across regions.
   * Cosmos DB can have one write and multiple read regions.
   * If the write region fails, you can read from another replica.
+  * [Create distinct partition keys](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/synthetic-partition-keys) - see ["Choosing a partition key"](https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview#choose-partitionkey)
 
 
-### Notable Limits**
+### [Notable Limits**](https://docs.microsoft.com/en-us/azure/cosmos-db/concepts-limits)
 
 ### Labs
 **Skills Measured in Examination**

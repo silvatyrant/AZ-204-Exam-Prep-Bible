@@ -15,6 +15,9 @@
 
 
 **[Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)**
+ * [Third-party dependency tracking requires that we store two properties in the DB](https://docs.microsoft.com/en-us/azure/azure-monitor/app/custom-operations-tracking):
+   * Telemetry.Context.Operation.Id
+   * Telemetry.Id
 
 ### Tech Tips
 

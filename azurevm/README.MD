@@ -7,6 +7,7 @@
 ---------
 
 ### General
+**Provisioning**
 * [Cloud-init](https://cloudinit.readthedocs.io/) for Linux VM provisioning and Powershell scripts for Windows VM provisioning.
  * Linux VM vs Windows VM.
  * Tiering based on ACUs and disk.
@@ -14,15 +15,33 @@
    * Secure Boot
    * vTPM
    * VBS & HVCI
-
-**Storage**
-* Standard disks (HDDs) vs. Premium disks (SSDs).
-* Managed (Max capacity is 4TB) vs. Unmanaged (Storage account File storage).
-
-**VM Extensions**
+* **Storage**
+  * Standard disks (HDDs) vs. Premium disks (SSDs).
+  * Managed (Max capacity is 4TB) vs. Unmanaged (Storage account File storage).
+* **VM Extensions**
 * Custom script extension for post-provisioning customisation
 * Powershell Desired State Configuration (DSC)
 * Azure Diagnostics Extension
+
+**Application Deployment**
+  **Windows**
+Steps to publish a webapp from Visual Studio to IIS on a Azure hosted **Windows** VM:
+
+  1. Assign a static IP address
+  2. Assign a DNS name
+  3. Add an incoming rule for port 8172 to NSG
+  4. Add the Management service role to the server
+  5. Check configuration of the Management service in IIS
+  6. Install .NET Core Hosting Bundle. This allows .NET Core apps to be hosted in IIS.
+  7. Install the Web Deploy tool.
+
+  **Linux**
+Steps to publish a webapp from Visual Studio to IIS on a Azure hosted **Linux** VM:
+  1. Publish to a folder
+  2. Copy folder to server (using a SCP tool like WinSCP)
+  3. Install ASP.Net Core SDK 3.1
+  4. Install NGINX
+  5. Configure NGINX to proxy incoming HTTP requests on port 80 to the ASP.Net Core app in the Kestrel container on port 5000
 
 ### Tech Tips
 * List available images 
